@@ -1,0 +1,3 @@
+export const SET_LOADING_MOVIES = "SET_LOADING_MOVIES";
+export const SET_MOVIES = "SET_MOVIES";
+export const CLEAR_ALL_DATA = "CLEAR_ALL_DATA";
