@@ -11,7 +11,7 @@ interface ModelColor {
 export const HeaderHome = styled.View<HeaderTypeProps>`
   width: 100%;
   padding: 0 10px 0 20px;
-  background-color: ${({ theme }) => theme.colors.lightColor};
+  background-color: ${({ theme }) => theme.colors.backGroundF4};
   flex-direction: row;
   height: 60px;
   align-items: flex-start;

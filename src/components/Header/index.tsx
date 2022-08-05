@@ -13,7 +13,7 @@ export const HeaderHome = () => {
     <S.HeaderHome type={2}>
       <S.Header>
         {/* <Icon.PigzPayPrimaryColor width={88} height={88} /> */}
-        <S.BoxCommandsInput CommandsAvailable={focus}>
+        {/* <S.BoxCommandsInput CommandsAvailable={focus}>
           <TouchableOpacity
             onPress={() => {
               refInput.current.focus();
@@ -32,8 +32,8 @@ export const HeaderHome = () => {
               setFocus(false);
             }}
             onChangeText={() => {}}
-          />
-          {focus && (
+          /> */}
+          {/* {focus && (
             <TouchableOpacity
               onPress={() => {
                 Keyboard.dismiss();
@@ -51,7 +51,7 @@ export const HeaderHome = () => {
               </Text>
             </TouchableOpacity>
           )}
-        </S.BoxCommandsInput>
+        </S.BoxCommandsInput> */}
         <S.BoxCloudAndMenu>
           <S.Separator />
           <S.ButtonForAdministrative onPress={() => {}}>
