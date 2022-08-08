@@ -6,16 +6,16 @@ import { Store } from "../../models/Store";
 import { getMovies } from "../../store/actions/movies.actions";
 import * as S from "./style";
 import * as Icons from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 export const Home = () => {
   const dispatch = useDispatch();
   const { moviesItems, loadingMovies } = useSelector(
     (store: Store) => store.movies
   );
-
   const renderItem = ({ item }: any) => {
     return (
-      <S.BoxComponentFlatlist onPress={async () => {}}>
+      <S.BoxComponentFlatlist onPress={{}}>
         <S.ImageContainer
           source={{
             uri: `https://www.themoviedb.org/t/p/w500${item.image}`,
