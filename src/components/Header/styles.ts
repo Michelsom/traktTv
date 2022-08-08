@@ -10,14 +10,13 @@ interface ModelColor {
 }
 export const HeaderHome = styled.View<HeaderTypeProps>`
   width: 100%;
-  padding: 0 10px 0 20px;
-  background-color: ${({ theme }) => theme.colors.backGroundF4};
+  padding: 0 20px;
+  background-color: #000;
   flex-direction: row;
   height: 60px;
   align-items: flex-start;
   justify-content: ${(props) =>
     props.type === 1 ? "center" : "space-between"};
-  elevation: 1px;
 `;
 export const Header = styled.View`
   height: 60px;
@@ -35,7 +34,8 @@ export const BoxCommandsInput = styled.View<ModelColor>`
     CommandsAvailable === true ? 1 : 0}px;
   border-color: ${({ CommandsAvailable }: ModelColor) =>
     CommandsAvailable === true ? "red" : null};
-  width: 80%;
+  width: ${({ CommandsAvailable }) =>
+    CommandsAvailable === true ? "80%" : "0%"};
   background-color: ${({ CommandsAvailable }: ModelColor) =>
     CommandsAvailable === true ? "#fff" : "#eee"};
   border-radius: 24px;
@@ -64,9 +64,7 @@ export const Separator = styled.View`
 export const ButtonForAdministrative = styled.TouchableOpacity.attrs({
   activeOpacity: 0.5,
 })`
-  background: #eee;
   align-items: center;
-  margin-left: 16px;
   border-radius: 8px;
   justify-content: center;
   width: 40px;
