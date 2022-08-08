@@ -5,4 +5,5 @@ export interface Store {
 }
 export interface InitialProducts {
   moviesItems: MovieItem[] | null;
+  loadingMovies: boolean;
 }
