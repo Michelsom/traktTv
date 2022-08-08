@@ -2,7 +2,6 @@ import * as keys from "../keys";
 import { api } from "../../services/api";
 import axios from "axios";
 import { Dispatch } from "redux";
-import { GetMoviesItems } from "../../services/data";
 import header from "../../services/header.json";
 import { MovieItem } from "../../models/MovieItems";
 
